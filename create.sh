@@ -27,7 +27,7 @@ get_input_file()
 {
     currentDay="$1"
     outputFolder="$2"
-    curl -b "$CookieJar" "https://adventofcode.com/$CurrentYear/day/$currentDay/input" -o "$outputFolder/input.txt"
+    curl -b "$CookieJar" "https://adventofcode.com/$CurrentYear/day/$currentDay/input" -o "$outputFolder/input.txt" -v
 }
 
 # Function that creates both the folder and the file of the problem
