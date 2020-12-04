@@ -10,7 +10,7 @@ check_git_repository()
 {
     # Check repository current branch
     CurrentBranch=$(git branch --show-current)
-    if [ $CurrentBranch != "master" ];then
+    if [ $CurrentBranch != "main" ];then
         echo "Error. Git repository must be in master."
         exit 1;
     fi
