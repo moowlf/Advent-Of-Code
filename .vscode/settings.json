@@ -54,6 +54,7 @@
         "concepts": "cpp",
         "map": "cpp",
         "regex": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "numbers": "cpp"
     }
 }
