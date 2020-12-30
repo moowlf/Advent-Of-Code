@@ -55,6 +55,7 @@
         "map": "cpp",
         "regex": "cpp",
         "ranges": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "variant": "cpp"
     }
 }
