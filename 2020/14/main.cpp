@@ -168,7 +168,6 @@ private:
       queue.pop();
     }
 
-    std::sort(indexs.begin(), indexs.end());
     return indexs;
   }
 };
