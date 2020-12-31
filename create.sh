@@ -51,8 +51,6 @@ create_folder_file_in_new_branch()
     # Create file
     cp "$CurrentTemplateFile" "$FolderName/main.cpp"
     sed -i "s/PROBLEM_FOLDER/$CurrentYear\/$problemIdentifierWithLeadingZeroes/g" "$FolderName/main.cpp"
-
-    echo $FileContent > "$FolderName/main.cpp"
 }
 
 # Function calls
