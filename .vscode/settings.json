@@ -56,6 +56,7 @@
         "regex": "cpp",
         "ranges": "cpp",
         "numbers": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "iomanip": "cpp"
     }
 }
