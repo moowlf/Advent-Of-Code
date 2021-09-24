@@ -58,5 +58,6 @@
         "numbers": "cpp",
         "variant": "cpp",
         "iomanip": "cpp"
-    }
+    },
+    "C_Cpp.default.cppStandard": "c++20"
 }
