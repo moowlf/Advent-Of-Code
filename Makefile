@@ -2,7 +2,7 @@
 # Compiler
 CXX_COMPILER := g++
 
-# Variables that hold information about building 
+# Variables that hold information about building
 OUTPUT_FOLDER 			:= ./output
 OUTPUT_OBJECT_FOLDER 	:= ./output/objects
 EXECUTABLE				:= problem

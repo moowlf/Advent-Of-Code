@@ -24,6 +24,7 @@ struct InputData {
   uint64_t individual_ingredients{0};
 };
 
+
 std::vector<std::string> split(std::string_view s, std::string_view delimeter = " ") {
   size_t pos_start = 0, pos_end, delim_len = delimeter.size();
   std::vector<std::string> res;
