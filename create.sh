@@ -3,8 +3,7 @@
 set -e
 
 CookieJar=".cookies"
-CurrentYear="2020"
-CurrentTemplateFile="./templates/c++.cpp"
+CurrentYear="2021"
 
 # Function responsible for enforcing some rules related to the repository.
 check_git_repository()
@@ -33,24 +32,23 @@ get_input_file()
 
 # Function that creates both the folder and the file of the problem
 create_folder_file_in_new_branch()
-{   
+{
     problemIdentifier=$1
     problemIdentifierWithLeadingZeroes=$(printf %02d "$problemIdentifier")
-    
+
     # Folder without spaces
-    FolderName=$CurrentYear/$problemIdentifierWithLeadingZeroes
-    
+    FolderName=$CurrentYear/day_$problemIdentifierWithLeadingZeroes
+
     git checkout -b $FolderName
 
     # Create folders
+    cargo new $FolderName --bin
+
     InputFolder="$FolderName/inputs"
-    mkdir -p $FolderName $InputFolder
+    mkdir $InputFolder
 
     get_input_file "$problemIdentifier" "$InputFolder"
-    
-    # Create file
-    cp "$CurrentTemplateFile" "$FolderName/main.cpp"
-    sed -i "s/PROBLEM_FOLDER/$CurrentYear\/$problemIdentifierWithLeadingZeroes/g" "$FolderName/main.cpp"
+
 }
 
 # Function calls
