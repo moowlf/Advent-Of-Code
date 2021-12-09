@@ -38,7 +38,7 @@ output/*
 !output/.gitkeep
 
 ### vscode ###
-.vscode/*
+**/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
