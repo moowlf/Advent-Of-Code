@@ -43,3 +43,4 @@ output/*
 !.vscode/tasks.json
 !.vscode/launch.json
 
+**/target/*
