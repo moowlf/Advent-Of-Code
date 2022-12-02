@@ -3,14 +3,14 @@
 set -e
 
 CookieJar=".cookies"
-CurrentYear="2021"
+CurrentYear="2022"
 
 # Function responsible for enforcing some rules related to the repository.
 check_git_repository()
 {
     # Check repository current branch
     CurrentBranch=$(git branch --show-current)
-    if [ $CurrentBranch != "main" ];then
+    if [ $CurrentBranch != "dev" ];then
         echo "Error. Git repository must be in master."
         exit 1;
     fi
@@ -42,13 +42,11 @@ create_folder_file_in_new_branch()
     git checkout -b $FolderName
 
     # Create folders
-    cargo new $FolderName --bin
-
+    mkdir $FolderName
     InputFolder="$FolderName/inputs"
     mkdir $InputFolder
 
     get_input_file "$problemIdentifier" "$InputFolder"
-
 }
 
 # Function calls
