@@ -43,10 +43,12 @@ create_folder_file_in_new_branch()
 
     # Create folders
     mkdir $FolderName
+
     InputFolder="$FolderName/inputs"
     mkdir $InputFolder
 
     get_input_file "$problemIdentifier" "$InputFolder"
+    cp templates/javascript.js $FolderName/main.js
 }
 
 # Function calls
