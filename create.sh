@@ -3,7 +3,7 @@
 set -e
 
 CookieJar=".cookies"
-CurrentYear="2022"
+CurrentYear="2023"
 
 # Function responsible for enforcing some rules related to the repository.
 check_git_repository()
@@ -48,7 +48,7 @@ create_folder_file_in_new_branch()
     mkdir $InputFolder
 
     get_input_file "$problemIdentifier" "$InputFolder"
-    cp templates/javascript.js $FolderName/main.js
+    cp templates/python.py $FolderName/main.py
 }
 
 # Function calls
